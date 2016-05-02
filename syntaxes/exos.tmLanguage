@@ -35,7 +35,7 @@
 			<key>name</key>
 			<string>variable.language.exos</string>
 		</dict>
-<dict>
+		<dict>
 			<key>match</key>
 			<string>vr </string>
 			<key>name</key>
