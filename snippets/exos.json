@@ -1,0 +1,19 @@
+{	
+	"lldp": {
+		"prefix": "lldp",
+		"body": [
+			"conf lldp ports ${0:portrange} adv vend med cap",
+			"conf lldp ports ${0:portrange} adv vend med policy app voice vlan voice dscp 46",
+			"conf lldp ports ${0:portrange} adv vend med policy app voice-sig vlan voice dscp 40",
+		],
+		"description": "LLDP Config"
+	},
+	
+	"create vlan":{
+		"prefix": "vlan",
+		"body": [
+			"create vlan ${0:name} tag ${1:vlantag}",
+			"conf vlan ${0:name} descr ${2:description}",
+		],
+	},
+}
