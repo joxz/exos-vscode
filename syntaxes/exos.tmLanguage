@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>xsf</string>
+		<string>cfg</string>
+	</array>
+	<key>name</key>
+	<string>exos</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>^\s*unconf </string>
+			<key>name</key>
+			<string>invalid.deprecated.exos</string>
+		</dict>
+        <dict>
+			<key>match</key>
+			<string>^\s*disable </string>
+			<key>name</key>
+			<string>invalid.deprecated.exos</string>
+		</dict>
+        <dict>
+			<key>match</key>
+			<string>^\s*conf </string>
+			<key>name</key>
+			<string>keyword.control.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>vlan </string>
+			<key>name</key>
+			<string>variable.language.exos</string>
+		</dict>
+<dict>
+			<key>match</key>
+			<string>vr </string>
+			<key>name</key>
+			<string>variable.parameter.exos</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s*enable </string>
+			<key>name</key>
+			<string>keyword.control.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\s*create </string>
+			<key>name</key>
+			<string>markup.heading.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^[\s]*#(.*)</string>
+			<key>name</key>
+			<string>comment.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^[\s]*!(.*)</string>
+			<key>name</key>
+			<string>comment.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\d+\.\d+\.\d+\.\d+(/\d{1,2})?</string>
+			<key>name</key>
+			<string>constant.numeric.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\d)\:(\d{2})</string>
+			<key>name</key>
+			<string>constant.numeric.exos</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.exos</string>
+	<key>uuid</key>
+	<string>E1B78601-E584-4A7F-B011-A61710BFE035</string>
+</dict>
+</plist>

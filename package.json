@@ -1,0 +1,26 @@
+{
+    "name": "exos",
+    "displayName": "exos",
+    "description": "EXOS Visual Studio Code Language",
+    "version": "0.0.1",
+    "publisher": "jo",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "exos",
+            "aliases": ["exos", "exos"],
+            "extensions": [".xsf",".cfg"],
+            "configuration": "./exos.configuration.json"
+        }],
+        "grammars": [{
+            "language": "exos",
+            "scopeName": "text.exos",
+            "path": "./syntaxes/exos.tmLanguage"
+        }]
+    }
+}
