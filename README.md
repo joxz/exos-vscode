@@ -3,4 +3,4 @@
 
 Just some colorization rules for ExtremeXOS configuration files
 
-Snippets coming soon
+Some user snippets coming soon
