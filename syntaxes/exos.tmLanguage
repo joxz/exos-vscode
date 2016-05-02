@@ -78,6 +78,12 @@
 			<key>name</key>
 			<string>constant.numeric.exos</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\d)\:(\d{1,2})\-(\d{1,2})</string>
+			<key>name</key>
+			<string>constant.numeric.exos</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>text.exos</string>
