@@ -4,16 +4,41 @@
 		"body": [
 			"conf lldp ports ${0:portrange} adv vend med cap",
 			"conf lldp ports ${0:portrange} adv vend med policy app voice vlan voice dscp 46",
-			"conf lldp ports ${0:portrange} adv vend med policy app voice-sig vlan voice dscp 40",
+			"conf lldp ports ${0:portrange} adv vend med policy app voice-sig vlan voice dscp 40"
 		],
-		"description": "LLDP Config"
+		"description": "LLDP MED Config snippet"
 	},
 	
 	"create vlan":{
 		"prefix": "vlan",
 		"body": [
 			"create vlan ${0:name} tag ${1:vlantag}",
-			"conf vlan ${0:name} descr ${2:description}",
+			"conf vlan ${0:name} descr ${2:description}"
 		],
+		"description": "Create VLAN snippet"
 	},
+	"snmpv3": {
+		"prefix": "snmpv3",
+		"body": [
+			"conf snmp add user ${0:snmpuser} auth sha ${1:authpassword} privacy aes ${1:authpassword}",
+			"conf snmpv3 add group admin user ${0:snmpuser} sec usm",
+			"conf snmpv3 add target-params defaultParams user ${0:snmpuser} mp-model snmpv3 sec-model usm sec-level priv"
+		],
+		"description": "Create SNMPv3 User snippet"
+	},
+	"add": {
+		"prefix": "add",
+		"body": [
+			"conf vlan ${0:vlanname} add port ${1:portrange} ${2:tag/untagged}"
+		],
+		"description": "Add Ports to VLAN snippet"
+	},
+	"del": {
+		"prefix": "del",
+		"body": [
+			"conf vlan ${0:vlanname} del port ${1:portrange} ${2:tag/untagged}"
+		],
+		"description": "Delete Ports from VLAN snippet"
+	}
+
 }

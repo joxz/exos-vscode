@@ -17,15 +17,39 @@
 			<key>name</key>
 			<string>invalid.deprecated.exos</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\s*save </string>
+			<key>name</key>
+			<string>invalid.deprecated.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\s*unconfigure </string>
+			<key>name</key>
+			<string>invalid.deprecated.exos</string>
+		</dict>
         <dict>
 			<key>match</key>
 			<string>^\s*disable </string>
 			<key>name</key>
 			<string>invalid.deprecated.exos</string>
 		</dict>
+       <dict>
+			<key>match</key>
+			<string>^\s*dis </string>
+			<key>name</key>
+			<string>invalid.deprecated.exos</string>
+		</dict>
         <dict>
 			<key>match</key>
 			<string>^\s*conf </string>
+			<key>name</key>
+			<string>keyword.control.exos</string>
+		</dict>
+       <dict>
+			<key>match</key>
+			<string>^\s*configure </string>
 			<key>name</key>
 			<string>keyword.control.exos</string>
 		</dict>
@@ -41,10 +65,33 @@
 			<key>name</key>
 			<string>variable.parameter.exos</string>
 		</dict>
-
+		<dict>
+			<key>match</key>
+			<string>add </string>
+			<key>name</key>
+			<string>variable.parameter.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>del </string>
+			<key>name</key>
+			<string>variable.parameter.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>delete </string>
+			<key>name</key>
+			<string>variable.parameter.exos</string>
+		</dict>
 		<dict>
 			<key>match</key>
 			<string>^\s*enable </string>
+			<key>name</key>
+			<string>keyword.control.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\s*en </string>
 			<key>name</key>
 			<string>keyword.control.exos</string>
 		</dict>
@@ -74,13 +121,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(\d)\:(\d{1,2})</string>
+			<string>(\d{1})\:(\d{1,2})\-(\d{1,2})</string>
 			<key>name</key>
 			<string>constant.numeric.exos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(\d)\:(\d{1,2})\-(\d{1,2})</string>
+			<string>(\d{1})\:(\d{1,2})</string>
 			<key>name</key>
 			<string>constant.numeric.exos</string>
 		</dict>

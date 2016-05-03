@@ -1,9 +1,9 @@
 ## ExtremeXOS Language Settings for Visual Studio Code
 
 
-Just some colorization rules for ExtremeXOS configuration files
+Colorization rules for ExtremeXOS configuration files
 
-Some user snippets coming soon
+Snippets for creating VLANs, LLDP-, SNMP-, RADIUS-config.
 
 
 ## Install this extension
