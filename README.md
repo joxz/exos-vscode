@@ -3,7 +3,7 @@
 
 Colorization rules for ExtremeXOS configuration files
 
-Snippets for creating VLANs, LLDP-, SNMP-, RADIUS-config.
+Snippets for creating VLANs, LLDP-, SNMP-, RADIUS-config
 
 
 ## Install this extension
