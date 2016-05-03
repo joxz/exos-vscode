@@ -35,19 +35,19 @@
 			<key>name</key>
 			<string>invalid.deprecated.exos</string>
 		</dict>
-       <dict>
+		<dict>
 			<key>match</key>
 			<string>^\s*dis </string>
 			<key>name</key>
 			<string>invalid.deprecated.exos</string>
 		</dict>
-        <dict>
+		<dict>
 			<key>match</key>
 			<string>^\s*conf </string>
 			<key>name</key>
 			<string>keyword.control.exos</string>
 		</dict>
-       <dict>
+		<dict>
 			<key>match</key>
 			<string>^\s*configure </string>
 			<key>name</key>
