@@ -3,8 +3,8 @@
 		"prefix": "lldp",
 		"body": [
 			"conf lldp ports ${0:portrange} adv vend med cap",
-			"conf lldp ports ${0:portrange} adv vend med policy app voice vlan voice dscp 46",
-			"conf lldp ports ${0:portrange} adv vend med policy app voice-sig vlan voice dscp 40"
+			"conf lldp ports ${0:portrange} adv vend med policy app voice vlan ${1:vlan} dscp 46",
+			"conf lldp ports ${0:portrange} adv vend med policy app voice-sig vlan ${1:vlan} dscp 40"
 		],
 		"description": "LLDP MED Config snippet"
 	},
