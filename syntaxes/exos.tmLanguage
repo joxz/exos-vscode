@@ -67,13 +67,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>add </string>
+			<string> add </string>
 			<key>name</key>
 			<string>variable.parameter.exos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>del </string>
+			<string> del </string>
 			<key>name</key>
 			<string>variable.parameter.exos</string>
 		</dict>
@@ -87,13 +87,13 @@
 			<key>match</key>
 			<string>^\s*enable </string>
 			<key>name</key>
-			<string>keyword.control.exos</string>
+			<string>invalid.deprecated.exos</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>^\s*en </string>
 			<key>name</key>
-			<string>keyword.control.exos</string>
+			<string>invalid.deprecated.exos</string>
 		</dict>
 		<dict>
 			<key>match</key>
