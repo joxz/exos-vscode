@@ -29,7 +29,7 @@
 			<key>name</key>
 			<string>invalid.deprecated.exos</string>
 		</dict>
-        <dict>
+		<dict>
 			<key>match</key>
 			<string>^\s*disable </string>
 			<key>name</key>
