@@ -36,9 +36,23 @@
 	"del": {
 		"prefix": "del",
 		"body": [
-			"conf vlan ${0:vlanname} del port ${1:portrange} ${2:tag/untagged}"
+			"conf vlan ${0:vlanname} del port ${1:portrange}"
 		],
 		"description": "Delete Ports from VLAN snippet"
+	},
+	"radius-mgmt": {
+		"prefix": "radius",
+		"body": [
+			"conf radius mgmt ${0:primary/secondary} server ${1:serverip} client ${2:clientip} vr vr-default",
+			"conf radius mgmt ${0:primary/secondary} shared ${3:sharedsecret}"
+		],
+		"description": "RADIUS Config snippet"
+	},
+	"descr": {
+		"prefix": "descr",
+		"body": [
+			"conf port ${0:port} descr ${1:description}"
+		],
+		"description": "Port Description snippet"
 	}
-
 }
