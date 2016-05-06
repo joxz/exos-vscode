@@ -13,91 +13,31 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>^\s*unconf </string>
+			<string>\b(unconf|unconfigure|dis|disable|save|en|enable|download)\b</string>
 			<key>name</key>
 			<string>invalid.deprecated.exos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^\s*save </string>
-			<key>name</key>
-			<string>invalid.deprecated.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>^\s*unconfigure </string>
-			<key>name</key>
-			<string>invalid.deprecated.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>^\s*disable </string>
-			<key>name</key>
-			<string>invalid.deprecated.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>^\s*dis </string>
-			<key>name</key>
-			<string>invalid.deprecated.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>^\s*conf </string>
+			<string>\b(conf|configure)\b</string>
 			<key>name</key>
 			<string>keyword.control.exos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^\s*configure </string>
-			<key>name</key>
-			<string>keyword.control.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>vlan </string>
+			<string>\b(vlan)\b</string>
 			<key>name</key>
 			<string>variable.language.exos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>vr </string>
+			<string>\b(vr|add|del|delete)\b</string>
 			<key>name</key>
 			<string>variable.parameter.exos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string> add </string>
-			<key>name</key>
-			<string>variable.parameter.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string> del </string>
-			<key>name</key>
-			<string>variable.parameter.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>delete </string>
-			<key>name</key>
-			<string>variable.parameter.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>^\s*enable </string>
-			<key>name</key>
-			<string>invalid.deprecated.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>^\s*en </string>
-			<key>name</key>
-			<string>invalid.deprecated.exos</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>^\s*create </string>
+			<string>\b(create)\b</string>
 			<key>name</key>
 			<string>markup.heading.exos</string>
 		</dict>
@@ -128,6 +68,12 @@
 		<dict>
 			<key>match</key>
 			<string>(\d{1})\:(\d{1,2})</string>
+			<key>name</key>
+			<string>constant.numeric.exos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\s*((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))(%.+)?\s*</string>
 			<key>name</key>
 			<string>constant.numeric.exos</string>
 		</dict>
